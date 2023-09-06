@@ -18,99 +18,85 @@ class MyThemeData {
       background:OnprimaryColor ,
       onBackground:BlackColor,
       surface: Colors.grey,
-      onSurface:BlackColor ,
+      onSurface:WhiteColor ,
 
     ),
     appBarTheme: AppBarTheme(
         centerTitle: false,
         iconTheme: IconThemeData(color: WhiteColor)),
     textTheme: TextTheme(
-      displayLarge: TextStyle(
+      headline1: TextStyle(
         fontSize: 30,
         color: WhiteColor,
         fontWeight: FontWeight.w700,
       ),
-      titleMedium: TextStyle(
+      subtitle1: TextStyle(
         fontSize: 25,
         color: PrimaryColor,
         fontWeight: FontWeight.w500,
       ),
-      titleSmall: TextStyle(
+      subtitle2: TextStyle(
         fontSize: 25,
         color: Colors.green,
         fontWeight: FontWeight.w500,
       ),
-      bodyLarge: TextStyle(
+      bodyText1: TextStyle(
         fontSize: 20,
         color: BlackColor,
         fontWeight: FontWeight.w500,
       ),
-      bodyMedium:TextStyle(color: BlackColor,fontSize: 14,fontWeight: FontWeight.bold),
-    ),
-    floatingActionButtonTheme: FloatingActionButtonThemeData(
-      backgroundColor: PrimaryColor,
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: WhiteColor,
-      selectedItemColor: PrimaryColor, unselectedItemColor:Colors.grey,
+        selectedItemColor: PrimaryColor, unselectedItemColor:Colors.grey,
     ),
   );
 
   static final ThemeData darkTheme = ThemeData(
-    primaryColor: PrimaryColorDark,
+    primaryColor: PrimaryColor,
     scaffoldBackgroundColor: PrimaryColorDark,
     colorScheme: ColorScheme(
       brightness: Brightness.dark,
-      primary: SecondaryDarkColor,
+      primary: PrimaryColor,
       onPrimary: WhiteColor,
       secondary: GreenColor,
       onSecondary: WhiteColor,
       error:Colors.red ,
       onError:Colors.redAccent ,
-      background:PrimaryColorDark ,
+      background:OnprimaryColor ,
       onBackground:BlackColor,
       surface: Colors.grey,
       onSurface:WhiteColor ,
 
     ),
     appBarTheme: AppBarTheme(
-      backgroundColor: PrimaryColor,
-         titleTextStyle: TextStyle(
-           fontSize: 30,
-           color: BlackColor,
-           fontWeight: FontWeight.w700,
-         ),
         centerTitle: false,
         iconTheme: IconThemeData(color: BlackColor)),
     textTheme: TextTheme(
-      displayLarge: TextStyle(
+      headline1: TextStyle(
         fontSize: 30,
         color: BlackColor,
         fontWeight: FontWeight.w700,
       ),
-      titleMedium: TextStyle(
+      subtitle1: TextStyle(
         fontSize: 25,
         color: PrimaryColor,
         fontWeight: FontWeight.w500,
       ),
-      titleSmall: TextStyle(
+      subtitle2: TextStyle(
         fontSize: 25,
         color: Colors.green,
         fontWeight: FontWeight.w500,
       ),
-      bodyLarge: TextStyle(
+      bodyText1: TextStyle(
         fontSize: 20,
         color: BlackColor,
         fontWeight: FontWeight.w500,
       ),
-      bodyMedium:TextStyle(color: WhiteColor,fontSize: 14,fontWeight: FontWeight.bold),
-    ),
-    floatingActionButtonTheme: FloatingActionButtonThemeData(
-      backgroundColor: PrimaryColor,
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: Colors.white,
-      selectedItemColor: PrimaryColor, unselectedItemColor:WhiteColor,
+      backgroundColor: BlackColor,
+      selectedItemColor: PrimaryColor, unselectedItemColor:BlackColor,
     ),
   );
 }
